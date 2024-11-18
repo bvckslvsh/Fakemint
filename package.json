@@ -1,7 +1,7 @@
 {
     "name": "fakemint",
-    "version": "0.0.4",
-    "description": "",
+    "version": "0.1.0",
+    "description": "Minimalist command-line tool for generating test data.",
     "main": "src/index.ts",
     "bin": {
         "fakemint": "./dist/index.js"
@@ -22,6 +22,8 @@
     },
     "dependencies": {
         "@faker-js/faker": "9.2.0",
+        "@inquirer/prompts": "7.1.0",
+        "@inquirer/select": "4.0.2",
         "commander": "12.1.0"
     }
 }
