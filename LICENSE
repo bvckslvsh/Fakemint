@@ -19,3 +19,13 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+This project uses the following third-party libraries under the MIT License, unless stated otherwise:
+
+- `@faker-js/faker` - MIT License: https://github.com/faker-js/faker
+- `@inquirer/prompts` - MIT License: https://github.com/Inquirer/prompts
+- `commander` - MIT License: https://github.com/tj/commander.js
+- `@eslint/js` - MIT License: https://github.com/eslint/eslint
+- `@types/node` - MIT License: https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/node
+- `typescript` - Apache 2.0 License: https://github.com/Microsoft/TypeScript
+- `typescript-eslint` - MIT License: https://github.com/typescript-eslint/typescript-eslint
