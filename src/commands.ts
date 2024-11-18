@@ -1,10 +1,23 @@
 import { Command } from "commander";
 import { generateData } from "./generator";
 import { availableFields } from "./fields";
+import { runMenu } from "./menus/main";
 
 const program = new Command();
 
-program.name("Fakemint").description("Test data generator").version("0.0.1");
+program.name("Fakemint").description("Test data generator").version("0.1.0");
+
+program.action(() => {
+    runMenu();
+});
+
+program
+    .command("fields")
+    .description("List available fields")
+    .action(() => {
+        console.log("Available fields:");
+        console.log(Object.keys(availableFields).join(", "));
+    });
 
 program
     .command("generate")
@@ -17,14 +30,6 @@ program
         } catch (error) {
             console.error(error.message);
         }
-    });
-
-program
-    .command("help")
-    .description("List available fields")
-    .action(() => {
-        console.log("Available fields:");
-        console.log(Object.keys(availableFields).join(", "));
     });
 
 export default program;
